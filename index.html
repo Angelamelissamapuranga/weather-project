@@ -15,29 +15,38 @@
   <body>
     <div class="app">
       <header>
-        <input type="search" placeholder="Enter a city.." />
-        <input type="submit" value="Search" />
+        <form class="search-input">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="submit-form-input" />
+        </form>
       </header>
-      <div>
-        <h1>Brussels (Belgium)</h1>
-        <p>
-          Cloudy, Periods of Rain
-          <br />
-          10:46 sunday november 14
-        </p>
+      <div class="weather-app-data">
+        <h1><div class="location">Brussels, Belgium</div></h1>
+
+        <div class="weather-app-temperature-container">
+          <div class="emoji">🌧️</div>
+          <div class="weather-temperature">12</div>
+          <div class="weather-units">°C</div>
+        </div>
       </div>
-      <div>🌥️ 23°C</div>
+      <div class="info">
+        Tuesday 20:25, moderate rain <br />
+        Humidity: <strong>78%</strong>, Wind: <strong>4.12km/h</strong>
+      </div>
 
       <footer>
-        This page coded by
+        This project was coded by
         <a href="https://github.com/Angelamelissamapuranga"
           >Angela Meliisa Mapuranga</a
+        >, is open-sourced on
+        <a href="https://github.com/Angelamelissamapuranga/weather-project"
+          >GitHub</a
         >
-        ,Is open sourced on
-        <a href="https://github.com/Angelamelissamapuranga/weather-project">
-          github
-        </a>
-        and <a href="#">hosted on netlify</a>
+        and <a href="#">hosted on Netlify</a>.
       </footer>
     </div>
   </body>
