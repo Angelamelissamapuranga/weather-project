@@ -4,39 +4,35 @@ body {
 }
 
 a {
-    color: #885df1;
+  color: #885df1;
 }
 
 header {
- border-bottom: 1px solid #f9f7fe;
- padding: 0 0 30px 0;   
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
 }
 
-
-
-.weather-app-data{
-    display: flex;
-    justify-content: space-between;
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
 }
 
-.location{
-    margin: 0;
-    font-size: 30px;
-    line-height: 48px;
+.location {
+  margin: 0;
+  font-size: 30px;
+  line-height: 48px;
 }
 
-.info{
-   font-size: 16px;
-   color: rgba(39, 33, 66, 0.4); 
-   line-height: 24px;
-   font-weight: 500;
+.info {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
 }
 
 .info strong {
-    color: #f65282;
+  color: #f65282;
 }
-
-
 
 .app {
   background: white;
@@ -52,51 +48,45 @@ header {
   border-radius: 6px;
   border: none;
   padding: 15px 20px;
-  font size: 17px;
+  font-size: 17px;
   width: 70%;
 }
 
-.weather-app-temperature-container{
-    display: flex;
-
-    
-
+.weather-app-temperature-container {
+  display: flex;
 }
 
-.weather-temperature{
-    font-size: 88px;
-    font-weight: bold;
-    line-height: 88px;
-    margin-left: 10px;
-    
+.weather-temperature {
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 88px;
+  margin-left: 10px;
 }
 
 .emoji {
-    font-size: 44px;
-    margin-top: 22px;
+  font-size: 44px;
+  margin-top: 22px;
 }
 
-.weather-units{
-    margin-top: 16px;
-    font-size: 28px;
+.weather-units {
+  margin-top: 16px;
+  font-size: 28px;
 }
 
-.submit-form-input{
-    background: #885df1;
-    padding: 15px 30px ;
-    border: none;
-    margin-left: 5px;
-    font-size: 16px;
-    border-radius: 6px;
-    color: white;
-
+.submit-form-button {
+  background: #885df1;
+  padding: 15px 30px;
+  border: none;
+  margin-left: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+  color: white;
 }
 
-footer{
-    border-top: 1px solid #f9f7fe;
- padding: 30px 0 0  0; 
- text-align: center;
- font-size: 12px;
- color: rgba(0, 0, 0, 0.6);
-
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
 }

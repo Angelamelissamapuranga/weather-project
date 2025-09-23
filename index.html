@@ -15,17 +15,18 @@
   <body>
     <div class="app">
       <header>
-        <form class="search-input">
+        <form class="search-input" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             class="search-form-input"
+            id="search-city-input"
           />
-          <input type="submit" value="Search" class="submit-form-input" />
+          <input type="submit" value="Search" class="submit-form-button" />
         </form>
       </header>
       <div class="weather-app-data">
-        <h1><div class="location">Brussels, Belgium</div></h1>
+        <h1><div class="location" id="city">Brussels</div></h1>
 
         <div class="weather-app-temperature-container">
           <div class="emoji">🌧️</div>
@@ -49,5 +50,6 @@
         and <a href="#">hosted on Netlify</a>.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
