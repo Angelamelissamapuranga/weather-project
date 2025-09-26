@@ -64,12 +64,12 @@ header {
 }
 
 .emoji {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 90px;
+  height: 90px;
 }
 
 .weather-units {
-  margin-top: 16px;
+  margin-top: 6px;
   font-size: 28px;
 }
 
