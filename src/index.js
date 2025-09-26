@@ -18,6 +18,8 @@ function currentWeather(response) {
   descpritionElement.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
   temeperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formateDate(date) {
@@ -33,6 +35,9 @@ function formateDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
   return `${day}, ${hours}:${minutes}`;
 }
@@ -50,7 +55,39 @@ function searchSubmit(event) {
   searchCity(searchCityInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "0b13ta29a8716f0b00944ca581adofd4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(forecastFormat);
+}
+
+function forecastFormat(params) {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (days) {
+    forecastHtml =
+      forecastHtml +
+      `
+        <div class="weather-app-forecast-day">
+          <div class="weather-app-forecast-date">${days}</div>
+          <div class="weather-app-forecast-icon">🌥️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-app-forecast-temperature">
+              <strong>18°</strong>
+            </div>
+            <div class="weather-app-forecast-temperature">20°</div>
+          </div>
+        </div>
+      `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let formElement = document.querySelector("#search-form");
 formElement.addEventListener("submit", searchSubmit);
 
 searchCity("London");
+forecastFormat();
