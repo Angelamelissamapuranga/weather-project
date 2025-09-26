@@ -1,5 +1,10 @@
 body {
-  background: #f9f7fe;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
   font-family: "Noto Sans Mono", monospace;
 }
 
@@ -25,7 +30,7 @@ header {
 
 .info {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #22213d;
   line-height: 24px;
   font-weight: 500;
 }
@@ -35,7 +40,7 @@ header {
 }
 
 .app {
-  background: white;
+  background: rgba(255, 255, 255, 0.75);
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
